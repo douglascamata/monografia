@@ -1,0 +1,161 @@
+\chapter{Introdução}
+
+Segundo \citeonline{book-cloud-developing-countries}, muitas instituições de ensino superior e pesquisa
+de países em desenvolvimento sofrem com diversos problemas relacionados com o gerenciamento dos
+seus recursos computacionais. Eles trabalham com grupos que apresentam 3 características:
+
+\begin{itemize}
+    \item
+        Não possuem acesso adequado aos recursos computacionais para pesquisa e ensino;
+    \item
+        Se envolvem em alta carga de atividades de ensino;
+    \item
+        São formados por poucos membros e possuem um orçamento reduzido.
+\end{itemize}
+
+Estas atividades (pesquisa e ensino), ainda apresentam outras importantes características.
+Por exemplo, elas fazem um grande uso de recursos computacionais em curtos períodos
+de tempo, devido à estrutura dos semestres letivos, enquanto outros são usados
+mais regularmente \cite{book-cloud-developing-countries}.
+
+Apesar dos avanços em tecnologia, o compartilhamento e gerenciamentos destes recursos
+entre instituições de ensino tem recebido uma grande prioridade, principalmente nas
+regiões em desenvolvimento \cite{article-sharing-importance}.
+\citeonline{article-cloud-developing-countries}
+diz ainda que devido às altas demandas de recursos por estas instituições, os grupos dificilmente
+conseguem adquirir ou até mesmo manter recursos computacionais de alta performance.
+
+Muitos estudos mostram que \emph{cloud computing} tem benefícios distintos, como
+redução de custos, utilização eficiente de recursos computacionais,
+flexibilidade e provisionamento elástico \cite{article-cloud-cost-reduction}. Além disso,
+\citeonline{book-cloud-developing-countries} diz que todos estes benefícios se aplicam
+às duas principais atividades em instituições de ensino superior: pesquisa e ensino. Ele
+também diz que existem muitos outros artigos analisando o quão atrativo é o \emph{cloud computing}
+para países em desenvolvimento. Ele cita o exemplo de \citeonline{article-cloud-benefits},
+que apresenta vários benefícios, como fácil acesso à infraestrutura com baixo custo, melhorando
+os esforços para colaboração e o acesso a hardware e softwares mais recentes. Estes benefícios
+foram de fato confirmados pelo trabalho de \citeonline{book-cloud-developing-countries}.
+
+Até mesmo instituições governamentais, como o Governo Federal dos Estados Unidos da América,
+identificaram \emph{cloud computing} como uma ótima solução para os problemas
+que estavam enfrentando que sua estrutura de tecnologia de informação \cite{federal-cloud-computing}.
+Estima-se que cerca de 20, dos seus 80 bilhões de dólares de investimento em TI,
+serão utilizados para a migração de seus sistemas para este novo paradigma.
+
+\section{Problemática e justificativa}
+
+Segundo \citeonline{article-cloud-developing-countries}, a característica principal
+relacionada a pesquisa em instituições de ensino é que os grupos de pesquisa são
+pequenos e não são bem coordenados. Como resultado, os investimentos nas pesquisas
+acabam sendo \textit{ad-hoc}, sob demanda e muito frequentemente não coordenados. Ainda
+dentro deste assunto, o autor diz que estes grupos tendem a resolver problemas pequenos e
+que não são recentes, porque não possuem recursos suficientes para resolver problemas
+maiores e mais complexos. Alguns grupos precisam de acesso a computação  de alta
+\emph{performance} para simulações e análises de seus modelos. Porém, o orçamento reduzido
+acaba limitando muito a performance dos recursos computacionais que a instituição
+é capaz de adquirir. Todas estas características culminam nos seguintes problemas:
+
+\begin{itemize}
+    \item
+        Recursos fragmentados e inadequados para resolução de grandes problemas. Eles
+        são divididos em pequenos e desconectados grupos, capazes de resolver somente
+        pequenos problemas.
+    \item
+        Os pesquisadores querem ter total controle sobre seus recursos, principalmente
+        para customizá-los para seus próprios problemas. Esta atitude não facilita, mas sim
+        atrapalha, o compartilhamento destes recursos.
+    \item
+        O baixo orçamento torna muito difícil a aquisição de recursos computacionais.
+        Porém, a fragmentação e falta de esforços coordenados em dividir e compartilhar
+        os recursos já obtidos resultam em uma subutilização destes.
+\end{itemize}
+
+Um estudo feito por \citeonline{article-learning-as-a-service} mostra que existem muitos modelos de \emph{cloud computing}
+que alcançaram o sucesso dentro de instituições de ensino, utilizando soluções comerciais e não-comerciais, terceirizadas
+e não-terceirizadas.
+Porém, existem várias ``formas'' de \emph{cloud computing} e é essencial que as instituições de ensino
+que desejam utilizar este modelo escolham a forma adequada para melhor satisfazer suas necessidades computacionais.
+
+Pode-se identificar estes mesmos problemas anteriormente mecionados
+na Universidade Estadual do Norte Fluminense (UENF). Como exemplo,
+há o caso de alguns professores do Centro de Ciências Biológicas, onde eles
+possuem seu conjunto de recursos computacionais de alta performance. Estes recursos são
+relativamente pequenos para soluções de grandes problemas, com necessidades
+de software bem específicas, os professores desejam 100\% destes recursos
+disponíveis quando eles desejam executar seus procedimentos e não admitem
+que existam outros procedimentos concorrentes além dos seus próprios. Além
+destes poblemas, ainda há a dificuldade burocrática e financeira envolvida na
+compra de recursos adicionais, pois a compra demora uma quantiadade considerável
+de tempo até ser efetivada e o orçamento da universidade dificilmente permite a
+compra de equipamentos de última geração e com configurações de topo de linha.
+
+Há também o problema de gerenciamento das aplicações desenvolvidas por alunos e
+professores que são disponibilizadas para o público. Atualmente, por exemplo,
+os alunos do curso de Ciência da Computação dispõem de apenas um computador
+pessoal para ser utilizado como servidor. Diversos problemas são enfrentados
+pelos alunos, dentre eles, os mais graves são a correta configuração e
+instalação dos programas necessárias para que sua aplicação funcione e ainda
+sem interferir com outras aplicações instaladas no mesmo servidor, e questões
+relacionadas a segurança: quem deve ter a senha do servidor compartilhado, todos ou só um?
+Estes problemas acabam causando uma ilha de conhecimento, pois por diversos motivos,
+nem todos oa alunos podem ou precisam aprender isso e apenas um deles é escolhido para fazer
+todas as instalações, culminando numa dependência muito grande de uma única pessoa.
+
+\section{Objetivos}
+
+Este trabalho tem como objetivo apresentar um modelo de \emph{cloud computing},
+definido pela escolha de uma ferramenta e modelo adequados para sua implantação,
+capaz de minimizar estes problemas, e todos os outros já mencionados no início
+deste capítulo, dentro da
+Universidade Estadual do Norte Fluminense, especialmente para a disponibilização
+de projetos desenvolvidos pelos alunos e pesquisadores do Laboratório Ada
+Lovelace/LCMAT, mas não limitando-o a este propósito. Tal modelo é concebido
+através do \emph{framework} proposto por \citeonline {article-learning-as-a-service}.
+Também é um objetivo deste trabalho fazer uma discussão mais profunda sobre os
+detalhes técnicos da instalação do modelo, prover instruções para este processo,
+analisar as características do produto resultante e do processo, como um todo,
+verificar o nível do desenvolvimento do conjunto de ferramentas escolhido.
+
+\section{Metodologia}
+
+Vários trabalhos já aqui mencionados enumeram casos de sucesso, onde o \emph{cloud computing} soluciona os problemas
+encontrados por instituições de ensino localizadas em países em desenvolvimento com relação à gerência e aproveitamento
+dos seus recursos computacionais. Apesar de todos eles mencionarem que a solução foi alcançada, nenhum deles apresenta
+mais a fundo quais foram as ferramentas e as configurações destas que foram utilizadas pelas instituições, muito menos
+a razão da escolha de determinada ferramenta em relação a outras e os procedimentos seguidos para a implantação do ambiente.
+
+Este trabalho pretende abordar estes pontos que ainda não foram foco de muita literatura, escolhendo o
+\emph{OpenStack}, que é um dos conjuntos de ferramentas para \emph{cloud computing} mais utilizado e
+que evolui com mais velocidade, fazendo uma análise dos seus componentes, prosseguindo com sua
+instalação em um pequeno ambiente de testes e análise de suas funcionalidades, segurança e facilidades.
+
+\section{Organização}
+\label{sec:organizacao}
+
+Este trabalhado será apresentado seguindo a estrutura de capítulos abaixo:
+
+\begin{enumerate}
+
+    \item
+        Introdução: onde são brevemente apresentados alguns casos de uso, os objetivos
+        e justificativa, e a metodologia de desenvolvimento do mesmo.
+
+    \item
+        Fundamentação teórica, onde serão apresentados conceitos, métodos e definições
+        relacionadas a \emph{cloud computing}, suas vantagens e desvantagens, assim como
+        o estado de arte do tema.
+
+    \item
+        Apresentação do experimento, das ferramentas escolhidas para sua execução e das razões que levaram à
+        escolha destas em relação a outras por meio de comparações de prós e contras. Enumeração das possíveis
+        configurações para instalação, assim como das características ótimas para obter o maior desempenho através
+        deste novo paradigma. Inclui também informações instrutivas sobre a configuração destas ferramentas em um ambiente de testes pré-determinado.
+
+    \item
+        Descrição do funcionamento das ferramentas no ambiente de teste mencionado no item anterior.
+        Verificação das vantagens reais das ferramentas através deste ambiente e comparação com o paradigma de computação tradicional.
+
+    \item
+        Conclusões sobre o trabalho, considerações finais e comentários sobre possíveis trabalhos futuros.
+
+\end{enumerate}

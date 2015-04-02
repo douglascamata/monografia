@@ -1,0 +1,231 @@
+\chapter{Trabalhos relacionados}
+
+São vários os trabalhos que já apresentam casos de sucesso de uso de diversos
+modelos e tecnologias de cloud computing. Alguns dão enfoque a instituições de
+ensino situadas em países em desenvolvimento, como o trabalho de
+\citeonline{book-cloud-developing-countries}. Ele descreve a implantação
+de cloud computing na Universidade de Tecnologia de Ho Chi Minh, no Vietnã,
+para as tarefas de pesquisa e ensino.
+
+No trabalho de \citeonline{book-cloud-developing-countries},
+recursos fixos e pré-configurados deixaram de ser fornecidos,
+em prol de recursos elásticos (que podem ser facilmente redimensionados)
+e móveis (podem estar inclusive em lugares físicos diferentes de acordo com a
+vontade do seu utilizador). Os pesquisadores forneciam os dados
+relacionados aos recursos que precisavam, seja de hardware ou software, e em
+segundos obtinham o devido acesso que necessitavam (IaaS). Eles também podiam
+ter acesso simples e direto a plataformas para desenvolverem suas pesquisas da
+maneira mais prática possível (PaaS). Além disso, foi criada uma rede social
+para que os pesquisadores compartilharem informações científicas mais facilmente
+entre eles.
+
+Em resumo, \citeonline{book-cloud-developing-countries} nos dizem que
+o cloud computing solucionou um grande problema da
+universidade, que eram as diferentes necessidades de sistemas operacionais e softwares,
+muitas vezes conflitantes, e a massiva manutenção manual demandada para a
+instalação e configurações dos softwares adequados a cada um dos cursos. A cada
+mudança nas necessidades de software de um determinado curso, era necessário que
+este fosse instalado e devidamente configurado em cada máquina do laboratório,
+tomando muito tempo e esforço.
+Com \emph{cloud computing}, as máquinas dos laboratórios passaram a ser servidas
+através de \emph{IaaS}, onde cada curso possui uma imagem
+relacionada a ele, que cumpre todos os requisitos de software, hardware virtual
+e sistema operacional necessários. Quando há alguma modificação nesses
+requisitos, ela é feita diretamente na imagem e esta é novamente disponibilizada
+para todos os terminais de acesso. Facilita-se assim o gerenciamento do
+laboratório, eliminando uma boa parte do excesso de trabalho manual e ainda
+agilizando todo o processo de manutenção dos recursos computacionais físicos e
+de software.
+
+Anteriormente, em outro trabalho, \citeonline{article-cloud-education-new-dawn}
+apresentou um estudo de caso da
+Universidade de Westminster, no Reino Unido. Com mais de 22 mil alunos, ela é
+uma de várias universidades desse país que aderiu ao cloud computing. Tudo
+começou quando o serviço de email desta instituição começou a ser abandonado por
+parecer desatualizado. Através de pesquisas, foi descoberto que 96\% dos
+estudantes desta universidade configuravam suas contas de email acadêmico para
+automaticamente redirecionar os emails para uma conta externa
+\cite{article-cloud-education-new-dawn}. Isto estava causando alguns problemas,
+dentre eles: os emails começaram a ser tratados como \textit{spam} pelos emails
+externos dos estudantes e, consequentemente, eles estavam deixando de receber
+comunicados importantes; e os alunos acabavam frequentemente usando pendrives,
+que são muito suscetíveis a perdas ou mal-uso, porque o serviço não fornecia
+uma capacidade de armazenamento adequada.
+
+Segundo este mesmo autor, para solucionar o problema, em 2007 a universidade
+começou a estudar o \textit{Google Apps: Education Edition}. Através dele,
+seriam oferecidos email com 7.3gb de armazenamento (o suficiente para os alunos
+abandonarem o uso de pendrives), um sistema de troca de mensagens, calendário
+compartilhado e até uma suíte de escritório com aplicações para processamento de
+textos, planilhas e apresentações. Durante o ano 2009/9, após um determinado
+período de testes e \textit{feedback}, o sistema foi implantado e os
+problemas apontados foram mitigados com sucesso. Os estudantes passaram a ter
+uma melhor experiência e a universidade estima uma economia de 1 milhão
+de libras esterlinas, caso fosse fornecer um serviço semelhante de forma
+independente.
+
+Ainda há outros dois casos de uso em instituições de ensino mencionados por
+\citeonline{article-cloud-education-new-dawn}. O primeiro, da Universidade da
+Califórnia, nos Estados Unidos da América, que está usando cloud computing
+para seu curso de desenvolvimento e implantação de aplicações SaaS
+(\textit{software as a service}). Ajudada por uma doação da \textit{Amazon Web
+Services} (AWS), todo o curso foi movido para a nuvem da empresa e eles podem
+fornecer a grande quantidade de servidores que o curso demanda em apenas alguns
+minutos \cite{site-cloud-education}. O segundo é o caso do Colégio de Medicina
+do Centro de Biotecnologia e Bioengenharia de Wisconsin, que está usando os
+servidores de cloud computing do Google para tornar pesquisas relacionadas a
+proteínas, que costumam ser caríssimas, disponíveis para cientistas em todo o
+mundo.
+
+Contudo, as aplicações de \emph{cloud computing} já estudadas não se limitam
+ao setor empresarial, de forma geral, e de ensino. \citeonline{federal-cloud-computing}
+nos mostra estudos sobre a sua utilização no Governo Federal dos Estados Unidos.
+Foi planejado investir 25\% do orçamento do governo (cerca de 20 bilhões de dólares)
+para migração de sistemas de todas as suas agências para \emph{cloud computing}.
+Para auxiliar tais agências neste processo foi elaborada a Estratégia Federal
+de Cloud Computing, com o objetivo de:
+
+\begin{itemize}
+    \item
+        expor benefícios, considerações e dilemas do \emph{cloud computing};
+    \item
+        fornecer um framework de decisões e alguns casos de uso de exemplo
+        para ajudar as agências a migrarem seus sistemas;
+    \item
+        destacar recursos para sua implementação;
+    \item
+        identificar atividades, paéis e responsabilidades do governo federal
+        para catalisar a sua adoção.
+\end{itemize}
+
+Então elaborou-se um paralelo entre as principais características do ammbiente atual
+e do ambiente de \emph{cloud computing} proposto, segundo 3 critérios: eficiência,
+agilidade e inovação, que pode ser visto na Tabela \ref{table:federal-cloud-computing}.
+Todas as agências, antes de migrar seus sistemas, deveriam fazer este comparativo
+aplicado a cada sistema específico a avaliar se esta migração oferecerá vantagens consideráveis.
+É incluso neste trabalho o exemplo do Centro de Experiências do Exército (AEC), onde foi identificada
+a necessidade de atualizar seu sistema de gerencimanto de relação com o cliente e após
+considerarem diversas opções, como atualizar seu sistema proprietário de 10 anos de idade,
+escolherem uma solução de \emph{software} como serviço disponível comercialmente. Esta
+solução foi adaptada para todos os requisitos de segurança desta agência, proporcionava
+todas as funcionalides que eram necessárias e foi entregue a uma fração do tempo
+e dinheiro necessários para atualizar o antigo sistema legado. Durante o processo de escolha
+chegou-se às seguinte conclusões sobre os critérios propostos:
+
+\begin{itemize}
+    \item
+    Eficiência: o custo inicial de atualizar o sistema legado era de 500 mil a 1 milhão
+    de dólares, enquanto o investimento inicial da solução de \emph{software} como serviço
+    teve o custo de 54 mil dólares;
+
+    \item
+    Agilidade: foi considerado também o tempo para atualização do antigo \emph{software}.
+    Apesar dos upgrades ao longo dos anos, era inviável customizá-lo com as necessidades
+    do centro. Enquanto isso, a nova solução oferece provisiosamento em uma fração do tempo
+    do seu antecessor, além de ser mais escalável e fácil de atualizar conforme o tempo;
+
+    \item
+    Inovação: a solução de \emph{software} como serviço integra-se diretamente
+    com email e \emph{Facebook} e acesso a informação de qualquer lugar, através
+    da \emph{internet} e permite a agência aproveitar do sistema de inovações
+    do seu provedor de serviços sem ter que gerenciar pesados recursos computacionais.
+
+\end{itemize}
+
+\begin{table}
+    \caption{Benefícios do Cloud Computing (Fonte: \cite{federal-cloud-computing})}
+    \label{table:federal-cloud-computing}
+    \centering
+    \begin{tabular}{|p{8cm}|p{8cm}|}
+        \hline
+        \multicolumn{2}{|c|}{Eficiência} \\
+        \hline
+        Cloud Computing & Ambiente atual \\
+        \hline
+        \tabitem Alta utilização de recursos (maior que 60-70\%) & \tabitem Baixa utilização de recursos (menor que 30\%) \\
+        \tabitem Demanda agregada e sistema acelerado de consolidação & \tabitem Demanda fragmentada e sistemas duplicados \\
+        \tabitem Produtividade no desenvolvimento e gerenciamento de aplicações, redes e usuários finais & \tabitem Difícil gerenciamento \\
+        \hline
+        \multicolumn{2}{|c|}{Agilidade} \\
+        \hline
+        Cloud Computing & Ambiente atual \\
+        \hline
+        \tabitem Comprado como serviço de fornecedores confiáveis & \tabitem Requer anos para construção de data-centers para novos serviços \\
+        \tabitem Incrementos e decrementos de capacidade quase instantâneos & \tabitem Requer meses para aumentar a capacidade de serviços existentes \\
+        \tabitem Mais responsivo a necessidades urgentes \\
+        \hline
+        \multicolumn{2}{|c|}{Inovação} \\
+        \hline
+        Cloud Computing & Ambiente atual \\
+        \hline
+        \tabitem Muda o foco da posse dos recursos para gerenciamento de serviços & \tabitem Sobrecarregado com gerenciamento de recursos \\
+        \tabitem Incentiva inovação no setor privado & \tabitem Totalmente desacoplado de inovações no setor privado \\
+        \tabitem Encoraja uma cultura empreendedora & \tabitem Sem riscos, uso de tecnologia legada \\
+        \tabitem Mais ligado a tecnologias emergentes \\
+        \hline
+    \end{tabular}
+\end{table}
+
+De acordo com o trabalho de \citeonline{ibm-cloud-computing}, a IBM, grande
+empresa do ramo de computação, conhecida desde os seus primórdios, tem um caso
+de uso de sucesso absoluto de \emph{cloud computing}. Na empresa, esta tecnologia
+é utilizada dentro das 6 principais cargas de trabalho de tecnologia da informação:
+desenvolvimento e testes, análise, armazenamento, collaboração, computação pessoal
+e aplicações em produção. Graças a este uso, segundo estes mesmos autores, a
+IBM melhorou sua eficiência, enquanto ao mesmo obteve impressivas economias em
+capital e operações. O trabaho apresenta as seguintes considerações:
+
+\begin{itemize}
+    \item
+        As equipes de desenvolvimento e testes presenciaram o tempo de provisionamento
+        de um servidor cair de 5 dias ou mais para apenas uma hora. Isto impactou
+        num acelerado desenvolvimento de novas funcionalidades e na velocidade
+        com que as aplicações desenvolvidas chegavam no mercado;
+
+    \item
+        A nuvem de análise de dados melhorou incrivelmente a área de \emph{business intelligence},
+        e reduziu os custos de projetos desta área, que eram da magnitude de centenas de milhares de dólares.
+        As organizações que utilizam esta nuvem tem acesso a informação agregada de
+        centenas de \emph{warehouses} (deposítos). Estas informações tem altíssimo valor, chegando
+        a 300 milhões de dólares, somente para as 20 maiores consumidoras, de um total de 300 organizações.
+
+    \item
+        Sua central de armazenamento baseada em \emph{cloud computing} cortou
+        o custo de armazenamento por \emph{byte} em 50\%, permitindo a IBM
+        acomodar o grande crescimento de demanda por armazenamento (estimado
+        em 25\% ao ano) sem aumentar o orçamento total destinado a essa área.
+
+    \item
+        A rede social \emph{IBM Connections}, hospedada em sua própria \emph{cloud},
+        aumentao dramasticamente a colaboração entre seus funcionários e, consequentemente,
+        a produtividade e inovação destes. Esta rede social suporta cerca de 50 milhões de minutos
+        em conferência por mês.
+\end{itemize}
+
+Antes da implantação de tecnologias de \emph{cloud computing}, vários gárgalos
+e problemas eram encontrados na IBM. Dentre estes problemas, por exemplo,
+o setor de desenvolvimento e testes enfrentava semanas de espera para obter um
+servidor, utilizava somente 10\% dele e não liberava seu uso devido ao tempo de
+espera para obtê-lo novamente. Neste trabalho é apontado que 95\% do provisionamento
+dos servidores é agora feito através de \emph{cloud}, confirmando sua velocidade e
+facilidade de uso.
+
+\citeonline{impact-cloud-computing} faz uma análise sobre o assunto e chega a conclusão que
+os diversos serviços baseados em \emph{cloud computing} já disponíveis fizeram com que as
+pessoas mudassem a maneira como pensam sobre conteúdo digital e como utilizá-lo.
+No setor empresarial, a implantação de \emph{cloud computing} está aumentando constantemente,
+independente do nicho. O crescimento de serviços que
+podem ser oferecidos neste modelo de \emph{utility computing} continuará a mudar o mercado,
+apresentar novos modelos de negócios e revolucionar a maneira como compartilha-se informações.
+
+A Doutora Tua Huomo, em \citeonline{impact-cloud-computing}, diz que \emph{cloud computing}
+não implica em apenas uma mudança de tecnologia, mas também forçará todos a adotarem
+processos operacionais e de desenvolvimento que são mais focados no valor para
+o cliente. Neste mesmo trabalho, o Professor Ian Biterllin prediz que qualidades
+únicas desta nova tecnologia tornam-a muito mais amigável ao meio ambiente
+do que todos os outros paradigmas conhecidos, mitigando as grandes críticas
+recebidas por \emph{data centers} quando ao seu consumo energético. Finalmente,
+o Dr Jonathan Liebanau, da Escola de Economia de Londres, em sua análise chega
+à conclusão que \emph{cloud computing} trará diversas mudanças positivas na economia, porém
+cada país sentirá essas mudanças com uma intensidade diferente: elas dependerão de como
+os provedores de serviço, o governo e os diretores de empresas se adaptarão.

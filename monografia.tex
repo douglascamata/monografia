@@ -1,0 +1,111 @@
+%-------------------------------- Configurações --------------------------------
+
+\documentclass[a4paper,         % Tamanho do papel: A4
+                 abntfigtabnum,
+                 noindentfirst,
+                 normaltoc,
+                 pnumplain,
+                 notimes
+                 % capchap,
+]{abnt}
+
+% Links border color
+\newcommand{\bc}{NavyBlue}
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\usepackage[utf8]{inputenc} % para pode escrever caracteres acentuados normalmente
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor} % http://en.wikibooks.org/wiki/LaTeX/Colors
+\usepackage[pdfborder={0 0 0},pdfborderstyle={/S/U/W 0.5},citebordercolor=\bc,filebordercolor=\bc,urlbordercolor=\bc,linkbordercolor=\bc]{hyperref} % http://www.tug.org/applications/hyperref/manual.html e http://migre.me/7FH3e
+\usepackage[alf]{abntcite}
+\usepackage{textcomp}
+\usepackage{lineno}
+\usepackage{nomencl} % para criar a lista de siglas
+\usepackage{lscape} % para usar páginas em landscape (deitadas)
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{minted}
+
+\renewcommand\listingscaption{Código}
+
+%------------------------- Numerar subsubsection -------------------------------
+
+\makeatletter
+\newcommand\sparagraph{\@startsection{section}{1}{\z@}%
+                                    {3.25ex \@plus1ex \@minus.2ex}%
+                                    {-1em}%
+                                    {\normalfont\normalsize\bfseries}}
+\newcommand\ssparagraph{\@startsection{subsection}{2}{\z@}%
+                                    {3.25ex \@plus1ex \@minus.2ex}%
+                                    {-1em}%
+                                    {\normalfont\normalsize\bfseries}}
+\newcommand\sssparagraph{\@startsection{subsubsection}{3}{\z@}%
+                                    {3.25ex \@plus1ex \@minus.2ex}%
+                                    {-1em}%
+                                    {\normalfont\normalsize\bfseries}}
+\setcounter{secnumdepth}{3}% Allow numbering up to \subsubsection or \sssparagraph
+\makeatother
+
+%----------------------- Quebra de linha após paragraph ------------------------
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+  {-3.25ex\@plus -1ex \@minus -.2ex}%
+  {1.5ex \@plus .2ex}%
+  {\normalfont\normalsize\bfseries}}
+\makeatother
+
+%--------------------------------- Informações ---------------------------------
+
+\newcommand{\meutitulo}{Modelagem de cloud computing para gerenciamento de recursos computacionais na UENF}
+
+% http://www.tug.org/applications/hyperref/manual.html
+\hypersetup{
+  pdftitle=\meutitulo,
+  pdfauthor=Douglas Oliveira Camata
+}
+
+\makenomenclature
+
+\begin{document}
+
+  \titulo{\meutitulo}
+  \autor{Douglas Oliveira Camata}
+  \instituicao{Universidade Estadual do Norte Fluminense Darcy Ribeiro\par Laboratório de Ciências Matemáticas}
+  \orientador[Orientadora:\par]{Profª. Drª. Annabell del Real Tamariz}
+  \comentario{Monografia apresentada ao curso de graduação em Ciência da Computação da Universidade Estadual do Norte Fluminense Darcy Ribeiro como requisito para obtenção do título de Bacharel em Ciência da Computação.}
+  \local{Campos dos Goytacazes - RJ}
+  \data{2014}
+
+  \capa
+  \folhaderosto
+
+  \input{tex/folha_de_aprovacao}
+  % \input{tex/epigrafe}
+  \input{tex/agradecimentos}
+  \input{tex/resumo}
+  \input{tex/abstract}
+
+  \sumario
+  \listoffigures
+  \listoftables
+  \printnomenclature
+
+  \input{tex/introducao}
+  \input{tex/fundamentacao}
+  \input{tex/estado_da_arte}
+  \input{tex/experimento  }
+  \input{tex/resultados}
+  \input{tex/conclusoes}
+
+  % \anexo
+  % \input{tex/anexo_efetividade_tdd}
+  % \input{tex/anexo_codigos_do_comparativo}
+
+  %--------------------------------- Bibliografia ------------------------------
+
+  \citeoption{abnt-repeated-author-omit=yes}
+  \bibliographystyle{abnt-alf}
+  \bibliography{bibliografia}
+\end{document}
